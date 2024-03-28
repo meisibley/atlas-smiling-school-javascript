@@ -1,8 +1,11 @@
-/* quotes */
-$(document).ready(function() {
+window.onload = function run() {
+  getQuotes();
+}
+
+function getQuotes() {
   $('.loader').show();
   $.ajax({
-    method: 'GET',
+    type: 'GET',
     url: 'https://smileschool-api.hbtn.info/quotes',
     dataType: 'json',
     jsonp: false,
@@ -50,4 +53,4 @@ $(document).ready(function() {
       $('.loader').hide();
     }
   });
-});
+}
