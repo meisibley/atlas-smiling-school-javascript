@@ -49,7 +49,6 @@
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
 }
 
 .header .navbar-line1 {
@@ -288,18 +287,18 @@
 .quoteCarousel button.slick-next.slick-arrow {
   content: url('images/arrow_white_right.png') !important;
   display: flex !important;
-  width: 29.04px !important;
-  height: 62.67px !important;
+  width: 1.8rem !important;
+  height: 3.9rem !important;
 }
 
 .quoteCarousel button.slick-prev.slick-arrow {
   content: url('images/arrow_white_left.png') !important;
   display: flex !important;
-  width: 29.04px !important;
-  height: 62.67px !important;
+  width: 1.8rem !important;
+  height: 3.9rem !important;
 }
 
-/* POPULAR SECTION  */
+/* POPULAR tutorials SECTION  */
 
 .popular {
   height: auto;
@@ -322,7 +321,6 @@
 }
 
 .section .card-img-overlay {
-  /* top: 25px; */
   top: 5%;
 }
 .section .card-title {
@@ -383,7 +381,6 @@
     width: 30%;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 5%;
   }
 }
@@ -405,8 +402,37 @@
     width: 30%;
   }
   .section .card-img-overlay {
-    /* top: 25px; */
     top: 5%;
+  }
+}
+
+/* popular tutorials added */
+.tutorialCarousel .slick-slide img, .lvCarousel .slick-slide img {
+  display: inline !important;
+}
+
+.tutorialCarousel button.slick-next.slick-arrow {
+  content: url('images/arrow_black_right.png') !important;
+  display: flex !important;
+  width: 1.8rem !important;
+  height: 3.9rem !important;
+}
+
+.tutorialCarousel button.slick-prev.slick-arrow {
+  content: url('images/arrow_black_left.png') !important;
+  display: flex !important;
+  width: 1.8rem !important;
+  height: 3.9rem !important;
+}
+
+@media (max-width: 575px) {
+
+  .tutorialCarousel button.slick-prev.slick-arrow, .lvCarousel button.slick-prev.slick-arrow {
+    margin-left: 5%;
+  }
+
+  .tutorialCarousel button.slick-next.slick-arrow, .lvCarousel button.slick-next.slick-arrow {
+    margin-right: 5%;
   }
 }
 
@@ -942,35 +968,4 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-/* My Changes PT */
-
-.ptCarousel .slick-slide img, .lvCarousel .slick-slide img {
-  display: inline !important;
-}
-
-.ptCarousel button.slick-next.slick-arrow, .lvCarousel button.slick-next.slick-arrow{
-  content: url('images/arrow_black_right.png') !important;
-  display: flex !important;
-  width: 29.04px !important;
-  height: 62.67px !important;
-}
-
-.ptCarousel button.slick-prev.slick-arrow, .lvCarousel button.slick-prev.slick-arrow {
-  content: url('images/arrow_black_left.png') !important;
-  display: flex !important;
-  width: 29.04px !important;
-  height: 62.67px !important;
-}
-
-@media (max-width: 575px) {
-
-  .ptCarousel button.slick-prev.slick-arrow, .lvCarousel button.slick-prev.slick-arrow {
-    margin-left: 15px;
-  }
-
-  .ptCarousel button.slick-next.slick-arrow, .lvCarousel button.slick-next.slick-arrow {
-    margin-right: 15px;
-  }
 }
