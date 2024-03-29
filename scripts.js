@@ -48,12 +48,12 @@ $(document).ready(function() {
         $('.loader').hide();
         if (tutorialData && tutorialData.length > 0) {
           $.each(tutorialData, function(index, tutorialItem){
-            let stars = '';
+            let starLine = '';
             for (let i = 0; i < 5; i++) {
               if (i <= tutorialItem.star) {
-                stars += '<img src="images/star_on.png" alt="star on" width="15px"/>';
+                starLine += '<img src="images/star_on.png" alt="star on" width="15px"/>';
               } else {
-                stars += '<img src="images/star_off.png" alt="star off" width="15px"/>';
+                starLine += '<img src="images/star_off.png" alt="star off" width="15px"/>';
               }
             }
             $('.tutorialCarousel').append(
@@ -71,7 +71,7 @@ $(document).ready(function() {
                       <h6 class="pl-3 m-0 main-color">${tutorialItem['author']}</h6>
                     </div>
                     <div class="info pt-3 d-flex justify-content-between">
-                      <div class="rating">${stars}</div>
+                      <div class="rating">${starLine}</div>
                       <span class="main-color">${tutorialItem.duration}</span>
                     </div>
                   </div>
@@ -86,8 +86,7 @@ $(document).ready(function() {
             autoplaySpeed: 2000,
             centerMode: false,
             responsive: [{breakpoint: 768, settings: {slidesToShow: 2}},
-                          {breakpoint: 576, settings: {slidesToShow: 1}}
-                        ]
+                          {breakpoint: 576, settings: {slidesToShow: 1}}]
           });
         }
     },
