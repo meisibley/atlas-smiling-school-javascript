@@ -246,6 +246,7 @@
 }
 
 @media screen and (max-width: 767px) {
+/* specific carousel-item to quoteCarousel */
   .quotes .quoteCarousel img {
     margin-left: 40px;
   }
@@ -406,19 +407,19 @@
   }
 }
 
-/* popular-tutorials added */
-.tutorialCarousel .slick-slide img, .lvCarousel .slick-slide img {
+/* popular-tutorials and lastest-video added */
+.tutorialCarousel .slick-slide img, .videoCarousel .slick-slide img {
   display: inline !important;
 }
 
-.tutorialCarousel button.slick-next.slick-arrow {
+.tutorialCarousel button.slick-next.slick-arrow, .videoCarousel button.slick-next.slick-arrow {
   content: url('images/arrow_black_right.png') !important;
   display: flex !important;
   width: 1.8rem !important;
   height: 3.9rem !important;
 }
 
-.tutorialCarousel button.slick-prev.slick-arrow {
+.tutorialCarousel button.slick-prev.slick-arrow, .videoCarousel button.slick-prev.slick-arrow {
   content: url('images/arrow_black_left.png') !important;
   display: flex !important;
   width: 1.8rem !important;
@@ -427,11 +428,11 @@
 
 @media (max-width: 575px) {
 
-  .tutorialCarousel button.slick-prev.slick-arrow, .lvCarousel button.slick-prev.slick-arrow {
+  .tutorialCarousel button.slick-prev.slick-arrow, .videoCarousel button.slick-prev.slick-arrow {
     margin-left: 5%;
   }
 
-  .tutorialCarousel button.slick-next.slick-arrow, .lvCarousel button.slick-next.slick-arrow {
+  .tutorialCarousel button.slick-next.slick-arrow, .videoCarousel button.slick-next.slick-arrow {
     margin-right: 5%;
   }
 }
@@ -944,7 +945,7 @@
   }
 }
 
-/* added slick-slide for 'quote' and 'laster video' */
+/* added slick-slide for 'quote' and 'laster video' and 'price' */
 .slick-slide {
   margin: 0 !important;
   margin: 0 !important;
